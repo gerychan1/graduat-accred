@@ -2,8 +2,9 @@
 
 import { sql } from "@vercel/postgres"
 import { revalidatePath } from "next/cache"
+import { GraduateSurveyFormData } from "@/types/form"
 
-export async function submitSurvey(data: any) {
+export async function submitSurvey(data: GraduateSurveyFormData) {
   try {
     await sql`
       INSERT INTO survey_responses (

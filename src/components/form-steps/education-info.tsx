@@ -3,9 +3,10 @@
 import { UseFormReturn } from "react-hook-form"
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { GraduateSurveyFormData } from "@/types/form"
 
 interface EducationInfoProps {
-  form: UseFormReturn<any>
+  form: UseFormReturn<GraduateSurveyFormData>
 }
 
 export function EducationInfo({ form }: EducationInfoProps) {
@@ -78,8 +79,8 @@ export function EducationInfo({ form }: EducationInfoProps) {
                 </SelectTrigger>
               </FormControl>
               <SelectContent>
-                <SelectItem value="bachelors">Bachelor's Degree</SelectItem>
-                <SelectItem value="masters">Master's Degree</SelectItem>
+                <SelectItem value="bachelors">Bachelor&apos;s Degree</SelectItem>
+                <SelectItem value="masters">Master&apos;s Degree</SelectItem>
                 <SelectItem value="phd">Ph.D.</SelectItem>
                 <SelectItem value="diploma">Diploma</SelectItem>
               </SelectContent>

@@ -3,9 +3,10 @@
 import { UseFormReturn } from "react-hook-form"
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form"
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { GraduateSurveyFormData } from "@/types/form"
 
 interface TeachingMethodsProps {
-  form: UseFormReturn<any>
+  form: UseFormReturn<GraduateSurveyFormData>
 }
 
 export function TeachingMethods({ form }: TeachingMethodsProps) {
